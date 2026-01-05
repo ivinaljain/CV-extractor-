@@ -574,3 +574,35 @@ Exception: Connection refused
 2026-01-04 17:55:56 | INFO     | job_extractor:analyze_job_posting:95 | Analyzing job posting with gpt-4o-mini
 2026-01-04 17:55:56 | INFO     | job_extractor:_parse_llm_response:169 | Successfully parsed job analysis: Senior Software Engineer
 2026-01-04 17:55:57 | DEBUG    | job_extractor:detect_greenhouse:92 | Greenhouse pattern matched: boards\.greenhouse\.io
+2026-01-04 19:25:08 | DEBUG    | job_extractor:is_valid_job_url:210 | URL is not from a known job site, but will attempt extraction
+2026-01-04 19:25:08 | INFO     | job_extractor:detect_source:69 | Using generic extraction (no specific platform detected)
+2026-01-04 19:25:08 | DEBUG    | job_extractor:process_job_url:219 | URL unchanged: https://careers.paramount.com/job/West-Hollywood-Sr-Analyst%2C-Marketing-Analytics-CA-90069/1351094300/
+2026-01-04 19:25:08 | INFO     | job_extractor:fetch_url:60 | Fetching URL: https://careers.paramount.com/job/West-Hollywood-Sr-Analyst%2C-Marketing-Analytics-CA-90069/1351094300/
+2026-01-04 19:25:09 | INFO     | job_extractor:fetch_url:77 | Response status: 200
+2026-01-04 19:25:09 | DEBUG    | job_extractor:fetch_url:78 | Final URL after redirects: https://careers.paramount.com/job/West-Hollywood-Sr-Analyst%2C-Marketing-Analytics-CA-90069/1351094300/
+2026-01-04 19:25:09 | INFO     | job_extractor:fetch_url:88 | Successfully fetched 76550 characters
+2026-01-04 19:25:09 | INFO     | job_extractor:extract_schema_job_posting:32 | Attempting to extract Schema.org JobPosting JSON-LD
+2026-01-04 19:25:09 | INFO     | job_extractor:extract_schema_job_posting:75 | No Schema.org JobPosting found
+2026-01-04 19:25:09 | INFO     | job_extractor:parse_html:249 | Parsing HTML content with BeautifulSoup
+2026-01-04 19:25:09 | DEBUG    | job_extractor:_find_main_content:312 | Found content using selector: {'role': 'main'}
+2026-01-04 19:25:09 | INFO     | job_extractor:clean_html_content:104 | Cleaning HTML content
+2026-01-04 19:25:09 | DEBUG    | job_extractor:clean_html_content:115 | Removed 52 unwanted tags
+2026-01-04 19:26:44 | DEBUG    | job_extractor:is_valid_job_url:210 | URL is not from a known job site, but will attempt extraction
+2026-01-04 19:26:44 | INFO     | job_extractor:detect_source:69 | Using generic extraction (no specific platform detected)
+2026-01-04 19:26:44 | DEBUG    | job_extractor:process_job_url:219 | URL unchanged: https://careers.paramount.com/job/West-Hollywood-Sr-Analyst%2C-Marketing-Analytics-CA-90069/1351094300/
+2026-01-04 19:26:44 | INFO     | job_extractor:fetch_url:60 | Fetching URL: https://careers.paramount.com/job/West-Hollywood-Sr-Analyst%2C-Marketing-Analytics-CA-90069/1351094300/
+2026-01-04 19:26:45 | INFO     | job_extractor:fetch_url:77 | Response status: 200
+2026-01-04 19:26:45 | DEBUG    | job_extractor:fetch_url:78 | Final URL after redirects: https://careers.paramount.com/job/West-Hollywood-Sr-Analyst%2C-Marketing-Analytics-CA-90069/1351094300/
+2026-01-04 19:26:45 | INFO     | job_extractor:fetch_url:88 | Successfully fetched 76550 characters
+2026-01-04 19:26:45 | INFO     | job_extractor:extract_schema_job_posting:32 | Attempting to extract Schema.org JobPosting JSON-LD
+2026-01-04 19:26:45 | INFO     | job_extractor:extract_schema_job_posting:75 | No Schema.org JobPosting found
+2026-01-04 19:26:45 | INFO     | job_extractor:parse_html:249 | Parsing HTML content with BeautifulSoup
+2026-01-04 19:26:46 | DEBUG    | job_extractor:_find_main_content:312 | Found content using selector: {'role': 'main'}
+2026-01-04 19:26:46 | INFO     | job_extractor:clean_html_content:104 | Cleaning HTML content
+2026-01-04 19:26:46 | DEBUG    | job_extractor:clean_html_content:115 | Removed 49 unwanted tags
+2026-01-04 19:26:46 | DEBUG    | job_extractor:_remove_boilerplate_elements:167 | Removed 3 boilerplate elements
+2026-01-04 19:26:46 | INFO     | job_extractor:clean_html_content:133 | Cleaned content: 6716 characters
+2026-01-04 19:26:46 | DEBUG    | job_extractor:is_meaningful_content:281 | Content appears valid (13 job keywords found)
+2026-01-04 19:26:46 | INFO     | job_extractor:analyze_job_posting:95 | Analyzing job posting with gpt-4o-mini
+2026-01-04 19:26:57 | INFO     | job_extractor:analyze_job_posting:119 | Tokens used: 2204 (prompt: 1752, completion: 452)
+2026-01-04 19:26:57 | INFO     | job_extractor:_parse_llm_response:169 | Successfully parsed job analysis: Sr Analyst, Marketing Analytics
